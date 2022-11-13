@@ -14,7 +14,7 @@ app.use("/api/products", require("./src/routes/products"));
 app.use("/api/categories", require("./src/routes/categories"));
 
 // Static files
-app.use("/", express.static(path.join(__dirname, "./front")))
+app.use("/", express.static("./src/front"))
 
 
 // Starting the server
