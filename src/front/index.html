@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bsale</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer type="module" src="./script.js"></script>
+    <!--Font Family Red Hat Display imported from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <!--Font Awesome import-->
+    <script src="https://kit.fontawesome.com/fd959ff265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">BSALE</a></h1>
+        <form>
+            <input type="text" placeholder="Busca un artículo" class="header__search">
+            <button type="submit" class="search-submit"><img src="./img/icon-arrow.svg" alt="buscar" class="img__search-arrow"></button>
+        </form>
+        <i class="fa-solid fa-cart-shopping main-cart" id="open-cart" value="0"><div class="item-count"></div></i>
+        <div id="cart-bg" class="hidden"></div>
+    </header>
+
+
+    <main class="products">
+        <section id="cart" class="hidden">
+            <img src="./img/Envio.jpg" class="cart-img" alt="Imagen de envio" aria-hidden="true">
+            <div class="order-description">
+                <h3>Tu orden:</h3>
+                <div id="order-description"></div>
+                <p class="total-buy">Total a pagar: $<span class="total-buy__amount" id="total-buy__amount"></span></p>
+                <button class="pay-order-btn">PAGAR</button>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h3>Filtrar por categoría</h3>
+            <form name="category-form">
+                <select name="categories" id="categories-container"></select>
+                <button type="submit" class="filter" id="filter">Filtrar</button>
+            </form>
+        </aside>
+        <section id="product-container" class="product-container"></section>
+    </main>
+    <footer>
+        <small><a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-envio-gratis_9793126.htm#query=envio&position=23&from_view=search&track=sph">Imagen de storyset</a> en Freepik</small>
+    </footer>
+</body>
+</html>
