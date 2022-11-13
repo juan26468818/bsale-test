@@ -4,7 +4,8 @@
   "description": "This is the back end of an Ecommerce store for bsale",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
