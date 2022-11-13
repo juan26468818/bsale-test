@@ -10,8 +10,8 @@ app.set("port", process.env.PORT || 3000);
 app.use(express.json());
 
 // Routes
-app.use("/api/products", require("./routes/products"));
-app.use("/api/categories", require("./routes/categories"));
+app.use("/api/products", require("./src/routes/products"));
+app.use("/api/categories", require("./src/routes/categories"));
 
 // Static files
 app.use(express.static(path.join(__dirname, "./front")))
